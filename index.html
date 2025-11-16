@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>baibuxinjing / Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; background: #fafbfc; font-family: 'Segoe UI', Arial, sans-serif; color: #222;}
+    .container { max-width: 1100px; margin: 0 auto; display: flex; padding: 32px 10px 10px 10px;}
+    .sidebar {
+      width:260px; min-width:220px; background:#fff; padding:24px;
+      border-radius:12px; box-shadow:0 2px 8px #eee; margin-right:40px; text-align:center;
+    }
+    .sidebar img {
+      width:120px; border-radius:12px; margin-bottom:18px; object-fit: cover;
+    }
+    .sidebar h2 {margin:10px 0 2px 0;}
+    .sidebar h3 {margin:0 0 10px 0; font-weight:normal; color:#777;}
+    .sidebar .info { font-size:0.98em; color:#444; text-align:left; margin-top:18px;}
+    .sidebar .info li {margin:5px 0;}
+    .sidebar a {color:#2196f3; text-decoration:none; font-size:0.98em;}
+    .sidebar a:hover {text-decoration: underline;}
+    main {flex:1; background:#fff; border-radius:12px; box-shadow:0 2px 8px #eee; padding:32px 42px 50px 42px;}
+    nav {width:100%; background: #fff; padding:22px 0 8px 0;}
+    nav ul {display:flex; gap:40px; list-style:none; margin:0; padding:0;}
+    nav ul li {font-size:1.05em;}
+    nav ul li a {color:#444; text-decoration:none;}
+    nav ul li a.active, nav ul li a:hover {color:#2196f3; text-decoration:underline;}
+    h1 {font-size:2em; margin-bottom:8px;}
+    .section-title {margin-top:32px; font-size:1.2em; font-weight:bold;}
+    .bio-highlight {color:#f36814; font-weight:600;}
+    .newslist {margin:16px 0 0 8px; padding:0;}
+    .newslist li {margin:7px 0;}
+    @media (max-width:800px){
+      .container {flex-direction:column;}
+      .sidebar{margin-right:0; margin-bottom:24px; width:100%;}
+      main{padding:22px 12px 30px 12px;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div style="max-width:1100px; margin:0 auto;">
+      <b style="font-size:1.2em;color:#444;">baibuxinjing / Homepage</b>
+      <ul style="float:right;">
+        <li><a class="active" href="#">Biography</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Honors & Awards</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div style="clear:both;"></div>
+    </div>
+  </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="https://avatars.githubusercontent.com/baibuxinjing" alt="avatar">
+      <h2>baibuxinjing</h2>
+      <h3>Lecturer / Researcher</h3>
+      <ul class="info">
+        <li>📍 Your Address, City, Country</li>
+        <li>✉️ <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="https://github.com/baibuxinjing">GitHub</a></li>
+        <li><a href="#">ORCID</a></li>
+      </ul>
+    </aside>
+    <main>
+      <h1>Biography</h1>
+      <p>
+        I am currently working at <b>Your Institution</b>. My main research interests are in <b>your research fields</b>.  
+        I have published more than <b>xx</b> research papers in major journals and conferences.  
+        <br><br>
+        <span class="bio-highlight">If you want to cooperate or contact me, feel free to email me. Looking for friends to join us!</span>
+      </p>
+      <div class="section-title">News</div>
+      <ul class="newslist">
+        <li>[09/2025] One paper accepted to <b>IEEE TCSVT</b></li>
+        <li>[06/2025] One paper accepted to <b>NN</b></li>
+        <li>[05/2025] One paper accepted to <b>IEEE TMM</b></li>
+        <li>[04/2025] One paper accepted to <b>XXX Journal</b></li>
+        <li>[12/2023] Achieved <a href="#">Excellent Doctoral Dissertation Award</a></li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>
